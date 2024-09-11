@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
+  springdockercompose1:
+
+    image: springdockercompose:latest
+    container_name: springdockercompose1
+    ports:
+      - "35001:6000"
+    links:
+      - mongodb
+
+  springdockercompose2:
+
+    image: springdockercompose:latest
+    container_name: springdockercompose2
+    ports:
+      - "35002:6000"
+    links:
+      - mongodb
+
+  springdockercompose3:
+
+    image: springdockercompose:latest
+    container_name: springdockercompose3
+    ports:
+      - "35003:6000"
+    links:
+      - mongodb
+
+  app-lb-roundrobin:
+    image: springdockercomposeround:latest
+    container_name: app-lb-roundrobin
+    ports:
+      - "8080:5000"
+    depends_on:
+      - springdockercompose1
+      - springdockercompose2
+      - springdockercompose3
+
