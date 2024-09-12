@@ -63,7 +63,7 @@ puedes cambiar los nombres pero deberas cambiar el docker compose
 
    
 ## Despliegue en AWS  
-[ Video despliegue en AWS funcionando](https://drive.google.com/file/d/1GtP4_oxBfLlL0NnuQ1NBpIja8wPeT4B1/view?usp=sharing)
+
 - contenedores 
 ![image](src/Readmeimages/5contendoresdeploy.png)
 - imagenes
@@ -83,7 +83,7 @@ El proyecto incluye pruebas unitarias que simulan el comportamiento del LogServi
    mvn test
    ```
 ### Desglosar en pruebas de extremo a extremo
-- **testSaveMessageWithTop10Messages**: Verifica que se guarde un nuevo mensaje y que se devuelvan los 10 mensajes más recientes.
+- **testSaveMessageWithTop10Messages**: Verifica  que se devuelvan los 10 mensajes más recientes.
 - **testSaveMessage**: Verifica que se guarde un nuevo mensaje .
 
 ### Ejemplo
