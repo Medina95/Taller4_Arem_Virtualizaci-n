@@ -112,6 +112,7 @@ El proyecto incluye pruebas unitarias que simulan el comportamiento del LogServi
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
+* [Docker](https://www.docker.com/) - Dependency Management
 
 
 
